@@ -39,6 +39,8 @@ router.post('/signup' , (req, res) =>{
     })
 })
 
+// login
+
 router.post('/login' , (req , res)=>{
     const user = req.body;
     query = "select email , password, role, status from users where email =?";
